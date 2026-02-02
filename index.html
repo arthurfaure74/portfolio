@@ -1,114 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Arthur FAURE | BUT Réseaux & Télécommunications</title>
-    <meta name="description" content="Portfolio d'Arthur FAURE, étudiant en BUT R&T">
-
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.bunny.net/css?family=jetbrains-mono:400,500,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-
-    <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <title>Portfolio BUT R&T - Réseaux & Télécommunications</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
                 <i class="fas fa-network-wired"></i>
-                <span>Arthur FAURE</span>
+                <span>BUT R&T</span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À Propos</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#parcours" class="nav-link">Parcours</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <button class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="accueil" class="hero">
-        <div class="hero-background"></div>
-        <div class="container">
-            <div class="hero-content" data-aos="fade-up">
-                <h1 class="hero-title">Étudiant BUT R&T</h1>
-                <p class="hero-subtitle">Réseaux & Télécommunications</p>
-                <p class="hero-description">
-                    Passionné par les technologies réseaux, la cybersécurité et le cloud computing
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Mes Projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me Contacter</a>
-                </div>
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typing-text">Étudiant BUT R&T</span>
+            </h1>
+            <h2 class="hero-subtitle">Réseaux & Télécommunications</h2>
+            <p class="hero-description">
+                Passionné par les réseaux, les systèmes et la cybersécurité, je recherche un stage en administration 
+                réseaux et systèmes pour mettre en pratique mes compétences Cisco, Windows Server, Linux et sécurité.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-primary">Mes Projets</a>
+                <a href="#contact" class="btn btn-secondary">Me Contacter</a>
             </div>
-            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="500">
-                <span>Scroll</span>
-                <i class="fas fa-chevron-down"></i>
-            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- À Propos -->
     <section id="apropos" class="section about">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">À Propos</h2>
             <div class="about-content">
                 <div class="about-text" data-aos="fade-right">
-                    <h3>Arthur FAURE - Étudiant en 2ème année de BUT R&T</h3>
+                    <h3>À propos de moi</h3>
                     <p>
-                        Je suis actuellement en 2ème année de BUT Réseaux et Télécommunications à l'IUT d'Annecy. 
-                        Je recherche un stage en administration réseaux et systèmes afin de mettre en pratique mes 
-                        compétences techniques et continuer à développer mon expertise dans un environnement professionnel.
+                        Je m'appelle Arthur FAURE et je suis étudiant en 2ᵉ année de BUT Réseaux et Télécommunications à l'IUT d'Annecy, 
+                        en recherche d'un stage en administration réseaux et systèmes.
                     </p>
                     <p>
-                        Au cours de ma formation, j'ai acquis des compétences solides en configuration de routeurs et switches 
-                        Cisco, en administration de serveurs Windows et Linux, ainsi qu'en cybersécurité (firewalls, analyse réseau, 
-                        durcissement système). Je pratique également la programmation avec PowerShell, Python et SQL pour automatiser 
-                        les tâches d'administration.
+                        Je me forme à la configuration de routeurs et switches Cisco, aux services IP (DHCP, DNS, NAT) et 
+                        à l'administration de réseaux LAN, tout en développant mes compétences sur Windows Server et Linux 
+                        (utilisateurs, services, GPO, Active Directory, virtualisation).
                     </p>
+                    <p>
+                        J'ai également des bases solides en scripts PowerShell et Python, en requêtes SQL et en cybersécurité 
+                        (filtrage firewall, analyse réseau, durcissement système, notions de pentesting), que je mets en pratique 
+                        dans mes projets de cours et d'autoformation.
+                    </p>
+                    <p>
+                        Mes expériences en tant que serveur, vendeur et assistant boucher m'ont appris à travailler en équipe, 
+                        à être réactif et autonome, et à prendre des responsabilités au quotidien.
+                    </p>
+
                     <div class="stats">
                         <div class="stat-item">
-                            <span class="stat-number">2024</span>
-                            <span class="stat-label">Début du BUT R&T</span>
+                            <span class="stat-number">70</span>
+                            <span class="stat-label">Réseaux</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">B2</span>
-                            <span class="stat-label">Niveau Anglais</span>
+                            <span class="stat-number">60</span>
+                            <span class="stat-label">Systèmes</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">+3</span>
-                            <span class="stat-label">Expériences saisonnières</span>
+                            <span class="stat-number">75</span>
+                            <span class="stat-label">Programmation</span>
                         </div>
                     </div>
                 </div>
-                <div class="about-image" data-aos="fade-left">
+            </div>
+            <div class="about-image" data-aos="fade-left">
                     <div class="image-wrapper">
-                        <i class="fas fa-user-graduate fa-10x"></i>
+                        <i class="fas fa-server fa-10x"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Competences Section -->
+    <!-- Compétences -->
     <section id="competences" class="section competences">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Compétences Principales</h2>
@@ -153,16 +149,16 @@
                     <div class="card-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3>Créer</h3>
+                    <h3>Programmer</h3>
                     <p>Créer des outils et applications informatiques</p>
                     <ul class="competence-details">
-                        <li>Programmation (Python, JS, C)</li>
-                        <li>Scripts PowerShell et Bash</li>
-                        <li>Développement web</li>
-                        <li>Bases de données SQL</li>
+                        <li>Développement Web (HTML/CSS/JS)</li>
+                        <li>Python, C, Java</li>
+                        <li>Applications client/serveur</li>
+                        <li>Bases de données</li>
                     </ul>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress" style="width: 80%"></div>
                     </div>
                 </div>
 
@@ -170,16 +166,16 @@
                     <div class="card-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Sécuriser</h3>
+                    <h3>Sécuriser / Piloter</h3>
                     <p>Cybersécurité et gestion de projets</p>
                     <ul class="competence-details">
-                        <li>Firewalls et filtrage réseau</li>
-                        <li>Analyse des risques</li>
-                        <li>Durcissement système</li>
-                        <li>Gestion de projet</li>
+                        <li>Analyse de risques</li>
+                        <li>Politique de sécurité</li>
+                        <li>Gestion de projets R&T</li>
+                        <li>Normes et standards</li>
                     </ul>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 60%"></div>
+                        <div class="progress" style="width: 65%"></div>
                     </div>
                 </div>
 
@@ -190,10 +186,10 @@
                     <h3>Innover</h3>
                     <p>Cloud, IoT et nouvelles technologies</p>
                     <ul class="competence-details">
-                        <li>Virtualisation (VirtualBox, VMware)</li>
-                        <li>Architectures cloud</li>
-                        <li>Objets connectés</li>
-                        <li>Technologies émergentes</li>
+                        <li>Virtualisation et Cloud</li>
+                        <li>Internet des Objets</li>
+                        <li>DevOps et conteneurisation</li>
+                        <li>Réseaux émergents</li>
                     </ul>
                     <div class="progress-bar">
                         <div class="progress" style="width: 60%"></div>
@@ -203,50 +199,59 @@
         </div>
     </section>
 
-    <!-- Parcours Section -->
+    <!-- Parcours -->
     <section id="parcours" class="section parcours">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Parcours Professionnels</h2>
-            <p class="section-subtitle" data-aos="fade-up">5 parcours possibles en R&T</p>
+            <h2 class="section-title" data-aos="fade-up">Parcours de Spécialisation</h2>
+            <p class="section-subtitle" data-aos="fade-up">5 parcours professionnels en R&T</p>
 
-            <div class="tabs" data-aos="fade-up">
-                <button class="tab-button active" data-tab="cyber">Cybersécurité</button>
-                <button class="tab-button" data-tab="devcloud">Dev-Cloud</button>
-                <button class="tab-button" data-tab="iot">IoT</button>
-                <button class="tab-button" data-tab="telecom">Télécoms</button>
-                <button class="tab-button" data-tab="management">Management</button>
+            <div class="parcours-tabs">
+                <button class="tab-button active" data-tab="cyber">
+                    <i class="fas fa-lock"></i> Cybersécurité
+                </button>
+                <button class="tab-button" data-tab="cloud">
+                    <i class="fas fa-cloud"></i> Dev Système & Cloud
+                </button>
+                <button class="tab-button" data-tab="iot">
+                    <i class="fas fa-microchip"></i> IoT & Mobilité
+                </button>
+                <button class="tab-button" data-tab="pilotage">
+                    <i class="fas fa-tasks"></i> Pilotage de Projets
+                </button>
+                <button class="tab-button" data-tab="operateur">
+                    <i class="fas fa-broadcast-tower"></i> Réseaux Opérateurs
+                </button>
             </div>
 
             <div class="tab-content">
                 <div class="tab-panel active" id="cyber">
-                    <h3>Cybersécurité</h3>
+                    <h3>Parcours Cybersécurité</h3>
                     <p>
                         Spécialisation dans l'analyse des risques d'attaques menaçant les systèmes d'information.
-                        Définition et application de politiques de sécurité conformes au RGPD et aux recommandations de
-                        l'ANSSI.
+                        Définition et application de politiques de sécurité conformes au RGPD et aux recommandations de l'ANSSI.
                     </p>
                     <div class="parcours-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Tests d'intrusion et audits</span>
+                            <span>Administration de systèmes sécurisés</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Surveillance et corrélation d'événements</span>
+                            <span>Détection et réponse aux incidents</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Gestion des incidents de sécurité</span>
+                            <span>Pentesting et audits de sécurité</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Conformité RGPD et ANSSI</span>
+                            <span>Cryptographie et sécurisation</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-panel" id="devcloud">
-                    <h3>Développement et Cloud Computing</h3>
+                <div class="tab-panel" id="cloud">
+                    <h3>Développement Système et Cloud</h3>
                     <p>
                         Formation aux technologies de virtualisation, conteneurisation et cloud computing.
                         Développement et déploiement d'applications dans des environnements cloud natifs.
@@ -258,7 +263,7 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Conteneurisation</span>
+                            <span>Conteneurisation (Docker, Kubernetes)</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
@@ -266,7 +271,7 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Solutions Cloud</span>
+                            <span>Solutions Cloud (AWS, Azure, GCP)</span>
                         </div>
                     </div>
                 </div>
@@ -280,28 +285,54 @@
                     <div class="parcours-features">
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Capteurs et actionneurs</span>
+                            <span>Réseaux IoT (LoRa, Sigfox, NB-IoT)</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Protocoles IoT (LoRa, Zigbee, MQTT)</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Réseaux mobiles 4G/5G</span>
+                            <span>Capteurs et objets connectés</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
                             <span>Collecte et traitement de données</span>
                         </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Architectures hybrides</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="tab-panel" id="telecom">
-                    <h3>Infrastructures de Télécommunications</h3>
+                <div class="tab-panel" id="pilotage">
+                    <h3>Pilotage de Projets de Réseaux</h3>
                     <p>
-                        Spécialisation dans les infrastructures des opérateurs télécoms, services multimédia et
-                        communications unifiées sur IP.
+                        Formation au management de projets techniques R&T, gestion d'équipes et relation client.
+                        Pilotage opérationnel et stratégique de solutions réseaux.
+                    </p>
+                    <div class="parcours-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Gestion de projets R&T</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Management d'équipes</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Relation client et commercial</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Ingénierie financière</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-panel" id="operateur">
+                    <h3>Réseaux Opérateurs et Multimédia</h3>
+                    <p>
+                        Spécialisation dans les infrastructures des opérateurs télécoms, services multimédia
+                        et communications unifiées sur IP.
                     </p>
                     <div class="parcours-features">
                         <div class="feature">
@@ -310,7 +341,7 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>VoIP et ToIP</span>
+                            <span>Communications unifiées</span>
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
@@ -318,33 +349,7 @@
                         </div>
                         <div class="feature">
                             <i class="fas fa-check-circle"></i>
-                            <span>Qualité de service (QoS)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-panel" id="management">
-                    <h3>Management de Projets R&T</h3>
-                    <p>
-                        Formation au management de projets techniques R&T, gestion d'équipes et relation client.
-                        Pilotage opérationnel et stratégique de solutions réseaux.
-                    </p>
-                    <div class="parcours-features">
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Gestion de projet Agile</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Management d'équipes</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Relation client</span>
-                        </div>
-                        <div class="feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Budget et planification</span>
+                            <span>Gestion d'infrastructures</span>
                         </div>
                     </div>
                 </div>
@@ -352,47 +357,47 @@
         </div>
     </section>
 
-    <!-- Projets Section -->
+    <!-- Projets (SAÉ) -->
     <section id="projets" class="section projets">
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Projets & SAÉ</h2>
             <p class="section-subtitle" data-aos="fade-up">Situations d'Apprentissage et d'Évaluation</p>
 
             <div class="projets-grid">
-                <div class="projet-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="projet-card" data-aos="flip-left">
                     <div class="projet-header">
                         <i class="fas fa-shield-alt"></i>
                         <span class="projet-tag">Semestre 1</span>
                     </div>
-                    <h3>Sensibilisation Cybersécurité</h3>
+                    <h3>Hygiène Informatique & Cybersécurité</h3>
                     <p>Sensibilisation aux bonnes pratiques de sécurité informatique et prévention des risques cyber.</p>
                     <div class="projet-tech">
                         <span class="tech-badge">Sécurité</span>
-                        <span class="tech-badge">Analyse</span>
+                        <span class="tech-badge">RGPD</span>
                         <span class="tech-badge">ANSSI</span>
+                    </div>
+                </div>
+
+                <div class="projet-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="projet-header">
+                        <i class="fas fa-network-wired"></i>
+                        <span class="projet-tag">Semestre 1</span>
+                    </div>
+                    <h3>Initiation aux Réseaux</h3>
+                    <p>Configuration et administration d'un réseau local avec équipements actifs (switchs, routeurs).</p>
+                    <div class="projet-tech">
+                        <span class="tech-badge">Cisco</span>
+                        <span class="tech-badge">VLAN</span>
+                        <span class="tech-badge">Routing</span>
                     </div>
                 </div>
 
                 <div class="projet-card" data-aos="flip-left" data-aos-delay="200">
                     <div class="projet-header">
-                        <i class="fas fa-network-wired"></i>
+                        <i class="fas fa-globe"></i>
                         <span class="projet-tag">Semestre 1</span>
                     </div>
-                    <h3>Configuration Réseau Local</h3>
-                    <p>Configuration et administration d'un réseau local avec équipements actifs (switchs, routeurs).</p>
-                    <div class="projet-tech">
-                        <span class="tech-badge">Cisco</span>
-                        <span class="tech-badge">VLAN</span>
-                        <span class="tech-badge">Routage</span>
-                    </div>
-                </div>
-
-                <div class="projet-card" data-aos="flip-left" data-aos-delay="300">
-                    <div class="projet-header">
-                        <i class="fas fa-code"></i>
-                        <span class="projet-tag">Semestre 1</span>
-                    </div>
-                    <h3>Site Web Personnel</h3>
+                    <h3>Se Présenter sur Internet</h3>
                     <p>Création d'un site web personnel avec HTML, CSS et JavaScript pour présenter son parcours.</p>
                     <div class="projet-tech">
                         <span class="tech-badge">HTML5</span>
@@ -439,85 +444,94 @@
                     <div class="projet-tech">
                         <span class="tech-badge">Intégration</span>
                         <span class="tech-badge">Teamwork</span>
-                        <span class="tech-badge">Full Stack</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technologies Section -->
-            <div class="technologies" data-aos="fade-up">
-                <h3>Technologies Utilisées</h3>
-                <div class="tech-grid">
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="0">
-                        <i class="fab fa-linux"></i>
-                        <p>Linux</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
-                        <i class="fab fa-windows"></i>
-                        <p>Windows Server</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="fab fa-python"></i>
-                        <p>Python</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
-                        <i class="fab fa-js"></i>
-                        <p>JavaScript</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fas fa-network-wired"></i>
-                        <p>Cisco</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
-                        <i class="fas fa-shield-halved"></i>
-                        <p>Stormshield</p>
-                    </div>
-                    <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fas fa-database"></i>
-                        <p>SQL</p>
+                        <span class="tech-badge">Gestion</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Technologies -->
+    <section class="section technologies">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technologies Maîtrisées</h2>
+            <div class="tech-grid">
+                <div class="tech-item" data-aos="zoom-in">
+                    <i class="fab fa-linux"></i>
+                    <p>Linux</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="50">
+                    <i class="fab fa-windows"></i>
+                    <p>Windows Server</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-docker"></i>
+                    <p>Docker</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
+                    <i class="fas fa-network-wired"></i>
+                    <p>Cisco</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-aws"></i>
+                    <p>AWS</p>
+                </div>
+                <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
+                    <i class="fas fa-database"></i>
+                    <p>SQL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="section contact">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Contact</h2>
+            <h2 class="section-title" data-aos="fade-up">Me Contacter</h2>
             <p class="section-subtitle" data-aos="fade-up">N'hésitez pas à me contacter pour toute opportunité</p>
 
-            <div class="contact-content" data-aos="fade-up">
-                <div class="contact-info">
-                    <div class="contact-item">
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h3>Email</h3>
                             <p>arthur.faure74@gmail.com</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Téléphone</h4>
+                            <h3>Téléphone</h3>
                             <p>+33 7 84 93 96 35</p>
                         </div>
                     </div>
-                    <div class="contact-item">
+                    <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Localisation</h4>
-                            <p>Thônes, France</p>
+                            <h3>Localisation</h3>
+                            <p>France</p>
                         </div>
                     </div>
-
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/arthur-faure-4a672230b/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/arthurfaure74" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/arthurfaure74" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arthur-faure-4a672230b/" class="social-link" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
                     </div>
                 </div>
 
-                <form class="contact-form">
+                <form class="contact-form" data-aos="fade-left">
                     <div class="form-group">
                         <input type="text" placeholder="Nom" required>
                     </div>
@@ -525,9 +539,14 @@
                         <input type="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
+                        <input type="text" placeholder="Sujet">
+                    </div>
+                    <div class="form-group">
                         <textarea placeholder="Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Envoyer
+                    </button>
                 </form>
             </div>
         </div>
@@ -536,13 +555,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Arthur FAURE - Tous droits réservés</p>
+            <p>&copy; 2025 Portfolio BUT R&T - Tous droits réservés</p>
+            <p>Basé sur le Programme National BUT Réseaux & Télécommunications</p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
