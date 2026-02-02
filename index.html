@@ -1,51 +1,29 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <!-- STRCUTURE de la page -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation du BUT Réseaux & Télécommunications</title>
-    <meta name="description"
-        content="Présentation du Bachelor Universitaire de Technologie (BUT) en Réseaux et Télécommunications en France : programme, compétences, débouchés, technologies et parcours de formation.">
-    <meta name="keywords"
-        content="BUT, Réseaux et Télécommunications, R&T, formation, IUT, cybersécurité, cloud, télécoms, informatique, études supérieures">
-    <meta name="author" content="Arthur FAURE">
-
-    <!-- FAVICON -->
-    <link rel="icon" href="assets/icons/network.svg" type="image/svg+xml">
-
-    <!-- OPEN GRAPH (réseaux sociaux) -->
-    <meta property="og:title" content="BUT Réseaux & Télécommunications">
-    <meta property="og:description"
-        content="Découvrez le Bachelor Universitaire de Technologie en Réseaux et Télécommunications : compétences, projets, débouchés et technologies.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.example.com">
-    <meta property="og:image" content="assets/img/og-image.jpg">
-
-    <!-- POLICES & ICONES -->
+    <title>Arthur FAURE - BUT Réseaux & Télécommunications</title>
+    <meta name="description" content="Portfolio d'Arthur FAURE, étudiant en BUT Réseaux et Télécommunications à l'IUT d'Annecy">
+    
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.bunny.net/css?family=jetbrains-mono:400,500,600&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-bU+QbF9X2Zx+0q6aJZDVJ+YpEfJbBlC9t6g9gJ1e0lMC3umZlpw0+K5k38XIfYwVt0X2kQ0Y+6UqRtSxVQzKg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- STYLES -->
+    
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- HEADER / HERO -->
     <header class="hero">
         <div class="hero-overlay"></div>
-
         <div class="hero-content">
             <nav class="navbar">
                 <div class="logo">
                     <i class="fa-solid fa-network-wired"></i>
-                    <span>BUT R&T</span>
+                    <span>Arthur FAURE</span>
                 </div>
                 <button id="theme-toggle" class="theme-toggle" aria-label="Changer de thème">
                     <i class="fa-solid fa-moon"></i>
@@ -53,483 +31,87 @@
             </nav>
 
             <div class="hero-main">
-                <div class="hero-text">
-                    <h1>BUT Réseaux & Télécommunications</h1>
-                    <p class="hero-subtitle">
-                        Formation professionnalisante en 3 ans pour devenir spécialiste des réseaux informatiques,
-                        des télécommunications et de la cybersécurité.
-                    </p>
+                <h1>Étudiant BUT R&T</h1>
+                <p class="hero-subtitle">Réseaux & Télécommunications</p>
+                <p class="hero-description">
+                    Je m'appelle Arthur Faure et je suis en 2ᵉ année de BUT Réseaux et Télécommunications à l'IUT d'Annecy. 
+                    Je recherche un stage en administration réseaux et systèmes pour mettre en pratique mes compétences sur des infrastructures professionnelles.
+                </p>
 
-                    <div class="hero-cta">
-                        <a href="#about" class="btn primary">Découvrir la formation</a>
-                        <a href="#contact" class="btn secondary">Me contacter</a>
-                    </div>
-
-                    <div class="hero-meta">
-                        <span><i class="fa-solid fa-location-dot"></i> IUT d'Annecy (Université Savoie Mont Blanc)</span>
-                        <span><i class="fa-solid fa-clock"></i> 3 ans (6 semestres)</span>
-                        <span><i class="fa-solid fa-user-graduate"></i> Licence (Bac+3)</span>
-                    </div>
+                <div class="hero-cta">
+                    <a href="#tech" class="btn primary">Mes compétences</a>
+                    <a href="#contact" class="btn secondary">Me contacter</a>
                 </div>
-
-                <div class="hero-aside">
-                    <div class="stat-card">
-                        <h3>Objectif</h3>
-                        <p>Former des professionnels capables de concevoir, déployer et sécuriser des infrastructures
-                            réseaux et télécoms pour les entreprises et organisations.</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>Compétences clés</h3>
-                        <ul>
-                            <li>Administration réseaux & systèmes</li>
-                            <li>Cybersécurité et supervision</li>
-                            <li>Virtualisation et cloud</li>
-                            <li>Télécoms & IoT</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="scroll-indicator">
-                <span>Faire défiler</span>
-                <i class="fa-solid fa-arrow-down"></i>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- SECTION A PROPOS -->
-        <section id="about" class="section">
+        <section id="tech" class="section">
             <div class="section-header">
-                <h2>À propos</h2>
-                <p>Qui je suis et ce que je recherche.</p>
-            </div>
-
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        Je m’appelle Arthur Faure et je suis en 2ᵉ année de BUT Réseaux et Télécommunications à l’IUT d’Annecy. Je recherche un stage en administration réseaux et systèmes pour mettre en pratique mes compétences dans un environnement professionnel.
-                    </p>
-                    <p>
-                        Je travaille au quotidien sur la configuration de routeurs et switches Cisco, l’administration de serveurs Windows et Linux, la virtualisation et la cybersécurité (firewalls, analyse réseau, durcissement). J’apprécie également l’automatisation avec PowerShell, Python et SQL.
-                    </p>
-                </div>
-
-                <div class="about-highlight">
-                    <div class="highlight-item">
-                        <span class="highlight-label">Formation</span>
-                        <span class="highlight-value">BUT R&T (2024-2027)</span>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-label">Spécialité</span>
-                        <span class="highlight-value">Admin réseaux & systèmes, cybersécurité</span>
-                    </div>
-                    <div class="highlight-item">
-                        <span class="highlight-label">Soft skills</span>
-                        <span class="highlight-value">Travail en équipe, communication, autonomie</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION FORMATION -->
-        <section id="program" class="section alt">
-            <div class="section-header">
-                <h2>La formation BUT R&T</h2>
-                <p>Une formation complète en réseaux, télécommunications et cybersécurité.</p>
-            </div>
-
-            <div class="program-grid">
-                <article class="program-card">
-                    <h3>Objectifs de la formation</h3>
-                    <p>
-                        Le Bachelor Universitaire de Technologie en Réseaux et Télécommunications forme des professionnels
-                        capables de comprendre, mettre en œuvre, configurer et maintenir des équipements et systèmes
-                        d'informations, tout en assurant leur sécurité physique et logicielle.
-                    </p>
-                    <p>
-                        La formation combine cours magistraux, travaux pratiques, projets tutorés et périodes en
-                        entreprise pour développer des compétences techniques solides et une forte capacité
-                        d'adaptation.
-                    </p>
-                </article>
-
-                <article class="program-card">
-                    <h3>Domaines couverts</h3>
-                    <ul class="checklist">
-                        <li><i class="fa-solid fa-check"></i> Réseaux informatiques (LAN, WAN, IPv4/IPv6, routage)</li>
-                        <li><i class="fa-solid fa-check"></i> Télécommunications (VoIP, 4G/5G, QoS, signalisation)</li>
-                        <li><i class="fa-solid fa-check"></i> Programmation (scripts, automatisation, bases de données)</li>
-                        <li><i class="fa-solid fa-check"></i> Cybersécurité (firewalls, analyse, durcissement)</li>
-                        <li><i class="fa-solid fa-check"></i> Cloud et virtualisation (VM, conteneurs)</li>
-                    </ul>
-                </article>
-
-                <article class="program-card">
-                    <h3>Méthodes pédagogiques</h3>
-                    <ul class="checklist">
-                        <li><i class="fa-solid fa-check"></i> Travaux pratiques sur équipements réels (Cisco, serveurs)</li>
-                        <li><i class="fa-solid fa-check"></i> Projets en groupe encadrés par des enseignants</li>
-                        <li><i class="fa-solid fa-check"></i> Mise en situation professionnelle (SAÉ)</li>
-                        <li><i class="fa-solid fa-check"></i> Stages en entreprise sur 2ᵉ et 3ᵉ année</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- SECTION COMPÉTENCES BUT -->
-        <section id="skills" class="section">
-            <div class="section-header">
-                <h2>Compétences développées</h2>
-                <p>Les 5 grandes compétences du BUT R&T.</p>
-            </div>
-
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <h3>Administrer les réseaux et l'Internet</h3>
-                    <p>
-                        Conception, déploiement et administration de réseaux locaux et étendus : adressage IP, VLAN,
-                        routage, redondance, haute disponibilité et gestion de la qualité de service.
-                    </p>
-                    <ul>
-                        <li>Configuration de switches et routeurs Cisco</li>
-                        <li>Services DHCP, DNS, NAT, VPN</li>
-                        <li>Supervision et diagnostic réseau</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Connecter les entreprises et les usagers</h3>
-                    <p>
-                        Mise en place de solutions d'accès réseau pour les utilisateurs et les sites distants :
-                        infrastructures opérateurs, accès internet, Wi-Fi, réseaux mobiles et services associés.
-                    </p>
-                    <ul>
-                        <li>Technologies xDSL, fibre, 4G/5G</li>
-                        <li>Réseaux d'opérateurs et d'entreprises</li>
-                        <li>Qualité de service et continuité</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Créer des outils et applications</h3>
-                    <p>
-                        Développement de scripts et d'outils pour automatiser les tâches d'administration, superviser
-                        les infrastructures et faciliter le travail des équipes techniques.
-                    </p>
-                    <ul>
-                        <li>Scripts Python, PowerShell</li>
-                        <li>Requêtes SQL et bases de données</li>
-                        <li>Notions de développement web (HTML, CSS, JavaScript)</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Cybersécurité et gestion de projets</h3>
-                    <p>
-                        Mise en œuvre de mesures de sécurisation des systèmes d'information et conduite de projets
-                        techniques en équipe avec une approche structurée.
-                    </p>
-                    <ul>
-                        <li>Firewalls, filtrage, chiffrement</li>
-                        <li>Analyse de risques et bonnes pratiques SSI</li>
-                        <li>Gestion de projet, coordination et communication</li>
-                    </ul>
-                </article>
-
-                <article class="skill-card">
-                    <h3>Cloud, IoT et nouvelles technologies</h3>
-                    <p>
-                        Découverte des architectures cloud, des environnements virtualisés et des objets connectés,
-                        avec une attention particulière à la sécurité et à l'évolutivité.
-                    </p>
-                    <ul>
-                        <li>Virtualisation de serveurs et services</li>
-                        <li>Architectures IoT sécurisées</li>
-                        <li>Surveillance et gestion à distance</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- SECTION PARCOURS -->
-        <section id="paths" class="section alt">
-            <div class="section-header">
-                <h2>Parcours possibles</h2>
-                <p>Des spécialisations pour différents métiers des réseaux et télécoms.</p>
-            </div>
-
-            <div class="paths-grid">
-                <article class="path-card">
-                    <h3>Cybersécurité</h3>
-                    <p>
-                        Spécialisation dans l'analyse des risques d'attaques menaçant les systèmes d'information.
-                        Définition et application de politiques de sécurité conformes au RGPD et aux recommandations de
-                        l'ANSSI.
-                    </p>
-                    <ul>
-                        <li>Tests d'intrusion et audits</li>
-                        <li>Surveillance et corrélation d'événements</li>
-                        <li>Gestion des incidents de sécurité</li>
-                    </ul>
-                </article>
-
-                <article class="path-card">
-                    <h3>Administration systèmes & réseaux</h3>
-                    <p>
-                        Formation aux technologies de virtualisation, conteneurisation et cloud computing. Développement
-                        et déploiement d'applications dans des environnements cloud natifs.
-                    </p>
-                    <ul>
-                        <li>Administration Windows/Linux</li>
-                        <li>Services d'infrastructure (AD, DNS, web)</li>
-                        <li>Automatisation et scripts</li>
-                    </ul>
-                </article>
-
-                <article class="path-card">
-                    <h3>IoT & Objets connectés</h3>
-                    <p>
-                        Expertise dans les réseaux IoT, protocoles de communication sans fil et objets connectés.
-                        Conception et déploiement d'architectures IoT sécurisées.
-                    </p>
-                    <ul>
-                        <li>Capteurs, actionneurs, passerelles</li>
-                        <li>Protocoles de communication adaptés</li>
-                        <li>Collecte et exploitation des données</li>
-                    </ul>
-                </article>
-
-                <article class="path-card">
-                    <h3>Infrastructures télécoms</h3>
-                    <p>
-                        Spécialisation dans les infrastructures des opérateurs télécoms, services multimédia et
-                        communications unifiées sur IP.
-                    </p>
-                    <ul>
-                        <li>Réseaux cœur et d'accès</li>
-                        <li>VoIP, visioconférence</li>
-                        <li>Qualité de service et SLA</li>
-                    </ul>
-                </article>
-
-                <article class="path-card">
-                    <h3>Management de projets R&T</h3>
-                    <p>
-                        Formation au management de projets techniques R&T, gestion d'équipes et relation client.
-                        Pilotage opérationnel et stratégique de solutions réseaux.
-                    </p>
-                    <ul>
-                        <li>Gestion de planning et de budgets</li>
-                        <li>Coordination d'équipes techniques</li>
-                        <li>Relation et satisfaction client</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- SECTION PROJETS / SAE -->
-        <section id="projects" class="section">
-            <div class="section-header">
-                <h2>Projets et mises en situation</h2>
-                <p>Des projets concrets pour mettre en pratique les compétences.</p>
-            </div>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <h3>Configuration d'un réseau local</h3>
-                    <p>
-                        Configuration et administration d'un réseau local avec équipements actifs (switchs, routeurs),
-                        VLAN, routage inter-VLAN, services réseau et supervision.
-                    </p>
-                    <ul>
-                        <li>Topologie d'une PME</li>
-                        <li>Configuration Cisco (CLI)</li>
-                        <li>Tests de connectivité et de performance</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <h3>Création d'un site web personnel</h3>
-                    <p>
-                        Création d'un site web personnel avec HTML, CSS et JavaScript pour présenter son parcours,
-                        sa formation, ses compétences et ses projets.
-                    </p>
-                    <ul>
-                        <li>Structure et mise en forme</li>
-                        <li>Responsive design</li>
-                        <li>Interactions et animations</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <h3>Solution complète Web & BDD</h3>
-                    <p>
-                        Mise en place d'une solution complète avec base de données, serveur web et application, du
-                        cahier des charges au déploiement.
-                    </p>
-                    <ul>
-                        <li>Conception de la base de données</li>
-                        <li>Développement et intégration</li>
-                        <li>Tests et documentation</li>
-                    </ul>
-                </article>
-
-                <article class="project-card">
-                    <h3>Sécurisation d'un système d'information</h3>
-                    <p>
-                        Mise en œuvre de protections réseau et services (DNS, Web), cryptographie et outils de sécurité
-                        adaptés, avec analyse des risques et plan de remédiation.
-                    </p>
-                    <ul>
-                        <li>Firewalls et filtrage</li>
-                        <li>Chiffrement et certificats</li>
-                        <li>Journalisation et supervision</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- SECTION TECHNOLOGIES -->
-        <section id="tech" class="section alt">
-            <div class="section-header">
-                <h2>Technologies et outils</h2>
-                <p>Quelques technologies abordées pendant la formation.</p>
+                <h2>Technologies</h2>
+                <p>Outils et technologies que j'utilise</p>
             </div>
 
             <div class="tech-grid">
-                <div class="tech-column">
-                    <h3>Systèmes & réseaux</h3>
-                    <ul class="skills-list">
-                        <li>Linux</li>
-                        <li>Windows Server</li>
-                        <li>Cisco</li>
-                        <li>Stormshield</li>
-                    </ul>
+                <div class="tech-card">
+                    <i class="fa-brands fa-linux"></i>
+                    <h3>Linux</h3>
                 </div>
-
-                <div class="tech-column">
-                    <h3>Programmation & scripts</h3>
-                    <ul class="skills-list">
-                        <li>Python</li>
-                        <li>PowerShell</li>
-                        <li>JavaScript</li>
-                        <li>SQL</li>
-                    </ul>
+                <div class="tech-card">
+                    <i class="fa-brands fa-windows"></i>
+                    <h3>Windows Server</h3>
                 </div>
-
-                <div class="tech-column">
-                    <h3>Outils & plateformes</h3>
-                    <ul class="skills-list">
-                        <li>Packet Tracer</li>
-                        <li>GNS3</li>
-                        <li>VirtualBox / VMware</li>
-                        <li>Wireshark</li>
-                    </ul>
+                <div class="tech-card">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>Cisco</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Stormshield</h3>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>SQL</h3>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION DÉBOUCHÉS -->
-        <section id="jobs" class="section">
-            <div class="section-header">
-                <h2>Débouchés professionnels</h2>
-                <p>Des métiers variés dans les réseaux, les télécoms et la cybersécurité.</p>
-            </div>
-
-            <div class="jobs-grid">
-                <article class="job-card">
-                    <h3>Administrateur systèmes & réseaux</h3>
-                    <p>
-                        Responsable du bon fonctionnement, de la sécurité et de l'évolution des infrastructures
-                        informatiques d'une entreprise ou d'un organisme.
-                    </p>
-                </article>
-
-                <article class="job-card">
-                    <h3>Technicien réseau & télécom</h3>
-                    <p>
-                        Mise en service, maintenance et support des équipements réseaux et télécoms, sur site ou à
-                        distance.
-                    </p>
-                </article>
-
-                <article class="job-card">
-                    <h3>Analyste cybersécurité</h3>
-                    <p>
-                        Surveillance de la sécurité des systèmes d'information, détection d'incidents et participation à
-                        la mise en œuvre de mesures de protection.
-                    </p>
-                </article>
-
-                <article class="job-card">
-                    <h3>Ingénieur support & exploitation</h3>
-                    <p>
-                        Supervision des infrastructures, résolution d'incidents complexes et amélioration continue des
-                        services.
-                    </p>
-                </article>
-
-                <article class="job-card">
-                    <h3>Consultant en infrastructures numériques</h3>
-                    <p>
-                        Conseil, conception et accompagnement de projets réseaux et télécoms pour différents clients.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-- SECTION CONTACT -->
         <section id="contact" class="section alt">
             <div class="section-header">
                 <h2>Contact</h2>
-                <p>N'hésitez pas à me contacter pour toute opportunité.</p>
+                <p>N'hésitez pas à me contacter pour toute opportunité</p>
             </div>
 
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <p><i class="fa-solid fa-envelope"></i> arthur.faure74@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +33 7 84 93 96 35</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Thônes, France</p>
+            <div class="contact-info">
+                <p><i class="fa-solid fa-envelope"></i> arthur.faure74@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +33 7 84 93 96 35</p>
+                <p><i class="fa-solid fa-location-dot"></i> Thônes, France</p>
 
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/TON_ID_LINKEDIN" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/TON_ID_GITHUB" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/arthur-faure-4a672230b" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/arthurfaure74" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                 </div>
-
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="votre.email@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4"
-                            placeholder="Votre message..."></textarea>
-                    </div>
-                    <button type="submit" class="btn primary full-width">Envoyer</button>
-                    <p class="form-status" aria-live="polite"></p>
-                </form>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; <span id="year"></span> BUT Réseaux & Télécommunications - IUT d'Annecy</p>
+        <p>&copy; <span id="year"></span> Arthur FAURE - BUT Réseaux & Télécommunications</p>
     </footer>
 
-    <!-- SCRIPTS -->
     <script src="script.js"></script>
 </body>
-
 </html>
