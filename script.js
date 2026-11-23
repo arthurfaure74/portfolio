@@ -427,3 +427,102 @@ rippleStyle.textContent = `
     }
 `;
 document.head.appendChild(rippleStyle);
+
+// ===== Projets : fenêtre des preuves =====
+const PROJETS = {
+  web: {
+    titre: "Se Présenter sur Internet",
+    desc: "Création d'un site web personnel avec HTML, CSS et JavaScript.",
+    preuves: [
+      { type: "img", titre: "Page d'accueil", src: "assets/projets/web/accueil.png", alt: "Page d'accueil du site" }
+    ]
+  },
+  integratif: {
+    titre: "Projet Intégratif",
+    desc: "Projet mobilisant les compétences de première année.",
+    preuves: [
+      { type: "img", titre: "Schéma du projet", src: "assets/projets/integratif/schema.png", alt: "Schéma du projet" }
+    ]
+  },
+  secu: {
+    titre: "Sécurisation et supervision avancées d'un SI",
+    desc: "Mise en place de mesures de sécurité et de supervision sur un système d'information.",
+    preuves: [
+      { type: "img", titre: "Schéma réseau", src: "assets/projets/secu/schema-reseau.png", alt: "Schéma réseau sécurisé" },
+      { type: "img", titre: "Règles de pare-feu", src: "assets/projets/secu/regles-pare-feu.png", alt: "Règles de pare-feu" },
+      { type: "code", titre: "Extrait de configuration", code: "# Colle ici ton extrait de config (sans mot de passe ni clé)" }
+    ]
+  },
+  pwa: {
+    titre: "Développer des applications communicantes (PWA)",
+    desc: "Application web installable, utilisable avec une connexion limitée.",
+    preuves: [
+      { type: "img", titre: "Application sur smartphone", src: "assets/projets/pwa/mobile.png", alt: "PWA sur smartphone" },
+      { type: "code", titre: "manifest.json", code: '{\n  "name": "Mon application",\n  "start_url": "/",\n  "display": "standalone"\n}' }
+    ]
+  }
+};
+
+const projetModal = document.getElementById('projet-modal');
+if (projetModal) {
+  const mTitle = document.getElementById('modal-title');
+  const mDesc = document.getElementById('modal-desc');
+  const mContent = document.getElementById('modal-content');
+  let lastFocus = null;
+
+  function ouvrirProjet(id) {
+    const p = PROJETS[id];
+    if (!p) return;
+    mTitle.textContent = p.titre;
+    mDesc.textContent = p.desc;
+    mContent.innerHTML = '';
+    p.preuves.forEach(pr => {
+      const bloc = document.createElement('div');
+      bloc.className = 'proof';
+      const h = document.createElement('h4');
+      h.textContent = pr.titre;
+      bloc.appendChild(h);
+      if (pr.type === 'img') {
+        const img = document.createElement('img');
+        img.src = pr.src;
+        img.alt = pr.alt || pr.titre;
+        img.loading = 'lazy';
+        img.addEventListener('click', () => window.open(pr.src, '_blank', 'noopener'));
+        bloc.appendChild(img);
+      } else {
+        const pre = document.createElement('pre');
+        const code = document.createElement('code');
+        code.textContent = pr.code;
+        pre.appendChild(code);
+        bloc.appendChild(pre);
+      }
+      mContent.appendChild(bloc);
+    });
+    lastFocus = document.activeElement;
+    projetModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    projetModal.querySelector('.modal-close').focus();
+  }
+
+  function fermerProjet() {
+    projetModal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocus) lastFocus.focus();
+  }
+
+  document.querySelectorAll('.projet-card').forEach(card => {
+    card.addEventListener('click', () => ouvrirProjet(card.dataset.projet));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        ouvrirProjet(card.dataset.projet);
+      }
+    });
+  });
+
+  projetModal.addEventListener('click', e => { if (e.target === projetModal) fermerProjet(); });
+  projetModal.querySelector('.modal-close').addEventListener('click', fermerProjet);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && !projetModal.hidden) fermerProjet();
+  });
+}
