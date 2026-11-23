@@ -434,31 +434,107 @@ const PROJETS = {
     titre: "Se Présenter sur Internet",
     desc: "Création d'un site web personnel avec HTML, CSS et JavaScript.",
     preuves: [
-      { type: "img", titre: "Page d'accueil", src: "assets/projets/web/accueil.png", alt: "Page d'accueil du site" }
+      { type: "img", titre: "Page d'accueil", src: "./projets/web/accueil.png", alt: "Page d'accueil du site" },
+      { type: "code", titre: "Extrait de configuration", code: `<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Arthur Faure</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="left-header">
+                <h1>Arthur Faure</h1>
+                <p class="subtitle">CV Étudiant - BUT R&amp;T</p>
+            </div>
+            <div class="right-header">
+                <address>
+                    26 rue du bienheureux pierre favre<br>
+                    74230, Thônes<br>
+                    <a target="_blank" href="tel:+330784939635">(+33) 07 84 93 96 35</a><br>
+                    <a target="_blank" href="mailto:arthur.faure74@gmail.com">arthur.faure74@gmail.com</a>
+                </address>
+            </div>
+        </header>
+        <hr class="divider">
+
+        <section class="section">
+            <h2>Compétences</h2>
+            <div class="content">
+                <p>Cisco CCNAv7 - ITN (en cours)</p>
+                <p>Python - Fondamentaux de la programmation</p>
+                <p>Commandes CLI de base</p>
+                <p>Outils de virtualisation - VirtualBox</p>
+                <p>Simulateurs réseaux - Packet Tracer</p>
+            </div>
+        </section>
+` }
     ]
   },
   integratif: {
     titre: "Projet Intégratif",
     desc: "Projet mobilisant les compétences de première année.",
     preuves: [
-      { type: "img", titre: "Schéma du projet", src: "assets/projets/integratif/schema.png", alt: "Schéma du projet" }
+      { type: "img", titre: "Schéma du projet", src: "./projets/integratif/schema.png", alt: "Schéma du projet" }
     ]
   },
   secu: {
     titre: "Sécurisation et supervision avancées d'un SI",
     desc: "Mise en place de mesures de sécurité et de supervision sur un système d'information.",
     preuves: [
-      { type: "img", titre: "Schéma réseau", src: "assets/projets/secu/schema-reseau.png", alt: "Schéma réseau sécurisé" },
-      { type: "img", titre: "Règles de pare-feu", src: "assets/projets/secu/regles-pare-feu.png", alt: "Règles de pare-feu" },
-      { type: "code", titre: "Extrait de configuration", code: "# Colle ici ton extrait de config (sans mot de passe ni clé)" }
+      { type: "img", titre: "Schéma réseau", src: "./projets/secu/schema-reseau.png", alt: "Schéma réseau sécurisé" },
+      { type: "img", titre: "Règles de pare-feu", src: "./projets/secu/regles-pare-feu.png", alt: "Règles de pare-feu" }
     ]
   },
   pwa: {
     titre: "Développer des applications communicantes (PWA)",
     desc: "Application web installable, utilisable avec une connexion limitée.",
     preuves: [
-      { type: "img", titre: "Application sur smartphone", src: "assets/projets/pwa/mobile.png", alt: "PWA sur smartphone" },
-      { type: "code", titre: "manifest.json", code: '{\n  "name": "Mon application",\n  "start_url": "/",\n  "display": "standalone"\n}' }
+      { type: "img", titre: "Application sur smartphone", src: "./projets/pwa/mobile.png", alt: "PWA sur smartphone" },
+      { type: "code", titre: "manifest.json", code: `{
+  "name": "SafeWalker",
+  "short_name": "SafeWalker",
+  "theme_color": "#ffffff",
+  "background_color": "#4f4f4f",
+  "display": "standalone",
+  "start_url": "https://srv-peda2.iut-acy.univ-smb.fr/faarthur/PWAPP/PWA_SAE302/",
+  "scope": "https://srv-peda2.iut-acy.univ-smb.fr/faarthur/PWAPP/PWA_SAE302/",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/faarthur/PWAPP/PWA_SAE302/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/faarthur/PWAPP/PWA_SAE302/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/faarthur/PWAPP/PWA_SAE302/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/faarthur/PWAPP/PWA_SAE302/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
+` }
     ]
   }
 };
